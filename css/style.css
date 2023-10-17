@@ -1,0 +1,59 @@
+/* reset */
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: "Franklin Gothic", "Arial Narrow", Arial, sans-serif;
+}
+
+/* variables */
+:root {
+  --light-text: #dae4e7;
+  --dark-text: #2c2c2c;
+  --light-title: #f4e8c1;
+  --dark-title: #d8d53b;
+}
+
+/* general styling */
+h1 {
+  font-size: 10rem;
+  font-weight: lighter;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+/* landing section */
+
+#landing-section {
+  height: 100vh;
+  background-size: cover;
+  background-image: url(/img/landing-section.jpg);
+}
+
+#logo-container {
+  padding: 2%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  transform: translateY(40%);
+  width: 300px;
+}
+
+.landing-text {
+  padding: 2%;
+  position: relative;
+  top: 20%;
+  text-align: center;
+}
+
+#landing-section h1 {
+  color: var(--dark-title);
+  text-shadow: 2px 2px 2px #2c2c2c;
+}
