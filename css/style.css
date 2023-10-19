@@ -26,10 +26,14 @@ h1 {
 }
 
 h2 {
-  font-size: 6rem;
+  font-size: 5.5rem;
   font-weight: lighter;
 }
 
+h3 {
+  font-size: 3.5rem;
+  font-weight: lighter;
+}
 h4 {
   font-size: 2.2rem;
 }
@@ -74,20 +78,21 @@ h4 {
 
 #promo-text-div {
   height: 50vh;
-  column-count: 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   column-gap: 2%;
 }
 
 #promo-header {
   padding: 2%;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 5%;
+  margin-right: 5%;
   color: var(--dark-title);
   text-shadow: 2px 2px 2px #2c2c2c;
 }
 
 #promo-text-container {
-  padding-top: 10px;
+  padding: 2%;
 }
 
 #promo-text {
@@ -104,6 +109,13 @@ h4 {
   padding: 5px;
   color: #2c2c2c;
   background-color: #d8d53b;
+}
+
+#read-more-btn {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
 /* overview section */
@@ -171,4 +183,99 @@ h4 {
 #overview3 {
   color: var(--light-text);
   text-shadow: 1px 1px 1px var(--dark-text);
+}
+
+/* information section */
+#information-text-div {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  vertical-align: middle;
+}
+
+#info-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#information-section {
+  background-image: url(/img/info-section.jpeg);
+  background-size: cover;
+}
+
+#info-para-header {
+  color: var(--dark-text);
+  text-shadow: 1px 1px 1px var(--light-text);
+  /* max-width: 80%; */
+  padding-right: 50%;
+}
+
+#info-text {
+  padding: 2%;
+  max-width: 80%;
+  text-align: justify;
+  color: var(--dark-text);
+}
+
+/* circles section */
+
+#circles-section {
+  height: 60vh;
+  background-image: url(/img/circles-section.jpeg);
+  background-size: cover;
+}
+
+#circles-heading {
+  color: var(--dark-title);
+}
+
+#circles-section p {
+  color: var(--light-text);
+}
+
+#circles-container {
+  display: flex;
+  text-align: center;
+  padding-top: 20vh;
+}
+
+.circles {
+  margin: auto;
+  border: none;
+  background-color: #2c2c2c;
+  border-radius: 100%;
+  height: 200px;
+  width: 200px;
+}
+
+.circles-text {
+  transform: translateY(50%);
+}
+
+/* testimony section */
+
+#testimony-section {
+  height: 60vh;
+}
+
+/* gallery section */
+
+#gallery-section {
+  height: 40vh;
+}
+
+#gallery-container {
+  display: flex;
+}
+
+#gallery-img {
+  flex: 25%;
+}
+
+#gallery-section img {
+  /* max-height: 40vh; */
+  width: 100%;
+  height: 40vh;
 }
